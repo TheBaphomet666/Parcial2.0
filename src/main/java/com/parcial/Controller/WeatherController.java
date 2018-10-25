@@ -26,7 +26,7 @@ public class WeatherController {
      }
 
  */
-    @GetMapping("/{City}")
+    @RequestMapping(method = RequestMethod.GET, path = "/{City}")
     public StringBuffer getStockExchange(@PathVariable("City") String city){
         return ws.Consult(city);
     }
