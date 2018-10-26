@@ -1,4 +1,0 @@
-var Front-EndModule =(function(){
-
-
-})();

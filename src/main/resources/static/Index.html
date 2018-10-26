@@ -195,11 +195,9 @@
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
-      <h3 class="masthead-brand">Cover</h3>
+
       <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Contact</a>
+
       </nav>
     </div>
   </header>
@@ -208,9 +206,16 @@
     <h1 class="cover-heading">Weather.</h1>
     <p class="lead">You can check the weather of Any city in this website.</p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary">Buscar</a>
+      <form>
+      <p class="lead">City:
+      <input id="City" type="text" name="City" placeholder="City"><br><br></p>
+
+      <a href="#" class="btn btn-lg btn-secondary" onclick="BackEndModule.getWeather()">Buscar</a>
+      </form>
+
     </p>
   </main>
+    <main role="main" class="inner cover" id="Info"></main>
   <div id="map-canvas"></div>
 
   <footer class="mastfoot mt-auto">
@@ -228,8 +233,9 @@
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="Index_files/popper.js"></script>
 <script src="Index_files/bootstrap.js"></script>
-<script src="js/Back-EndWeather.js"></script>
-<script src="js/Front-EndWeather.js"></script>
+<script src="js/BackEndWeather.js"></script>
+<script src="js/FrontEndWeather.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
 </body></html>
